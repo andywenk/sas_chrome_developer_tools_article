@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <title>Chrome Developer Tools Artikel - Beispiel Seite</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+      <h1>Chrome Developer Tools Artikel</h1>
+      <h2>Beispiel Code für den Artikel</h2>
+
+      <p>
+        Dies ist eine ganz einfache Seite mit ein bisschen CSS-Styles und ein bisschen JavaScript. Sie ist für
+        Anschaungszwecke gedacht um den Einsatz der Chrome Developer Tools zu zeigen. Und in der Tat -
+        komplett sinnfrei ;-)!
+      </p>
+
+      <p>
+        Um das folgende Ajax Besipiel lokal ausführen zu können, muss Chrome mit dem Parameter
+        <i>--allow-file-access-from-files</i> ausgeführt werden. Hier die Befehle für Mac OS X und Windows:
+      </p>
+
+      <p>
+        <table>
+          <tr>
+            <td><b>Mac OS X:<b></td>
+            <td>open -a 'Google Chrome' --args --allow-file-access-from-files</th>
+          </tr>
+          <tr>
+            <td><b>Windows:</b></td>
+            <td>chrome.exe --allow-file-access-from-files</td>
+          </tr>
+        </table>
+      </p>
+
+      <div id="loader">
+        Beim klick auf den Button werden hier Daten per Ajax geladen ...
+      </div>
+      <button class="loader">Daten laden</button>
+      <span class="error"></span>
+    </div>
+  </div>
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/loader.js"></script>
+  <script src="javascripts/app.js"></script>
+</body>
+</html>
